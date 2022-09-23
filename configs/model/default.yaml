@@ -1,0 +1,4 @@
+CLASSESNUM : 6
+MODELNAME  : "bert-base-cased"
+EPS : 1e-8
+LR  : 2e-5

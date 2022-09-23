@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emotion Recognation </title>
+
+    <link href="{{url_for('static' , filename = 'CSS/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static' , filename = 'CSS/all.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static' , filename = 'CSS/fontawesome.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static' , filename = 'CSS/style.css')}}" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="emotion_demo_block">
+            <div class="bv-ta-demo-container">
+                <div class="container">
+                    <div class="bv-ta-demo product-block">
+                        <div class="product-block-heading">
+                            <h2>Emotion Detection </h2>
+                        </div>
+                        <form method="POST">
+                        <div class="tab-pane fade  show active " id="v-pills-emotion" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <div class="row">
+                                <div class="col-md-7 col-sm-12">
+                                    <div class="pd-vertical shadow rounded p-4 bg-white">
+                                        <div>
+                                            <textarea class="p-4 form-control" id="emotion_input" placeholder="Enter your text here ... " name="sentence" cols="5" rows="8">{{sentence}}</textarea>
+                                            <div id="emotion_err" class="invalid-feedback"></div>
+                                        </div>
+                                        <div class="col">
+                                        </div>
+                                        <div class="res-center mt-4">
+                                            <button class="btn bytesview-btn btn-lg" id="emotion_validation" type="submit"> Detect </button>
+                                            <span><i id="emotion_spin" class="fa-circle-notch fas  fa-2x mainicon align-middle fa-spin" style="display:none"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-12">
+                                    <div class="shadow rounded p-4 bg-white">
+                                        <div class="pd-subheading">
+                                            <h3>Result</h3> 
+                                            <h6>{{all_time}}ms</h6> 
+                                        </div>
+                                        <div id="emotion-output-label" class="pd-output-text bluricon  intent-result text-center mt-4">
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                                    <i class="fas fa-angry fa-3x icon icon-anger " id="angry" style="color: {{anger}};"></i>
+                                                    <div class="icon-label">
+                                                        <h5>Angry</h5>
+                                                        <p id="emotion-anger"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                                    <i class="fas fa-flushed fa-3x icon-fear" style="color: {{fear}};"></i>
+                                                    <div class="icon-label">
+                                                        <h5>Fear</h5>
+                                                        <p id="emotion-fear"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                                    <i class="fas fa-smile-beam fa-3x icon-happy" style="color: {{joy}};"></i>
+                                                    <div class="icon-label">
+                                                        <h5>haha</h5>
+                                                        <p id="emotion-happy"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                                    <i class="fas fa-frown fa-3x icon-sad" style="color: {{sad}};"></i>
+                                                    <div class="icon-label">
+                                                        <h5>Sad</h5>
+                                                        <p id="emotion-sad"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                                    <i class="fas fa-grin-hearts fa-3x icon-love" style="color: {{love}};"></i>
+                                                    <div class="icon-label">
+                                                        <h5>Love</h5>
+                                                        <p id="emotion-love"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                                    <i class="fas fa-surprise fa-3x icon-surprise" style="color: {{surprise}};"></i>
+                                                    <div class="icon-label">
+                                                        <h5>Surprised</h5>
+                                                        <p id="emotion-surprized"></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="static/JS/all.min.js"></script>
+
+
+</body>
+
+</html>

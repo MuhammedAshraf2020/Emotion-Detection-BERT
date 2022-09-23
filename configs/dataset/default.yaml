@@ -1,0 +1,3 @@
+BATCHSIZE : 64
+MAXLENGTH : 100
+TOKENIZER : "bert-base-cased"

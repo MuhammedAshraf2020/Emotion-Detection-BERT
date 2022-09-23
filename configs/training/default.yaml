@@ -1,0 +1,16 @@
+
+# checkpint callback configs
+CHECKPOINT_DIR_PATH : "models"
+CHECKPOINT_FILENAME : "best-checkpoint"
+CHECKPOINT_MONITOR  : "val_loss"
+CHECKPOINT_MODE     : "min"
+
+# earlyStop callback configs
+EARLYSTOPPING_MONITOR : "val_loss"
+PATIENCE : 3
+EARLYSTOPPING_MODE : "min"
+
+#Trainer configs
+MAXEPOCHS : 5
+LOG_EVERY_N_STEPS : 20
+DETERMINISTIC : True
