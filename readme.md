@@ -22,6 +22,7 @@ This is fine-tuning of [Google BERT model](https://github.com/google-research/be
 ## Inference
 ### Download checkpoints
 - Available Checkpoints are trained on Emotion Dataset.
+
 |  Name  | gdrive id | Size |
 |:------:|:----------:|:------------------:|
 |  best-checkpoint.ckpt  |    1l5zGZyldWU-rPaWRFvdtc7Yurw7cEDZo   |     `1.2GB`      | 
